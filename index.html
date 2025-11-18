@@ -1,316 +1,151 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <base target="_self">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Профессиональный монтаж видео | Эксперт по видеомонтажу</title>
-    <meta name="description" content="Профессиональный монтаж видео любой сложности. Качественный результат в срок. Работаю с YouTube, рекламой, свадьбами, корпоративными видео.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#3B82F6",
-                        secondary: "#1E40AF",
-                        accent: "#F59E0B"
-                    },
-                    fontFamily: {
-                        'sans': ['Inter', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="min-h-screen bg-gray-50 font-sans">
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-primary rounded-full"></div>
-                    <span class="text-xl font-bold text-gray-800">VideoPro</span>
-                </div>
-                
-                <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-600 hover:text-primary transition-colors">Услуги</a>
-                    <a href="#portfolio" class="text-gray-600 hover:text-primary transition-colors">Портфолио</a>
-                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">Обо мне</a>
-                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Контакты</a>
-                </div>
-                
-                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">
-                    Обсудить проект
-                </button>
-            </div>
-        </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <title>Landing</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body class="bodi-container">
+    <header>
+      <div class="img-container">
+        <img
+          class="img-landing"
+          src="/img/IMG_1.jpg"
+          width="100%"
+          alt="img intensiv"
+        />
+        <button class="button-img" onclick="scrollToTarget('target-img-3')">ПОЧНИ СВОЄ РОЗСЛІДУВАННЯ</button>
+      <script>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+      </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-50 to-indigo-100 py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                        Профессиональный монтаж видео, который выделит ваш контент
-                    </h1>
-                    <p class="text-xl text-gray-600 mb-8">
-                        Превращаю сырые материалы в качественные видео для YouTube, рекламы, мероприятий и бизнеса. Работаю быстро, качественно и с вниманием к деталям.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors font-semibold">
-                            Начать проект
-                        </button>
-                        <button class="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-semibold">
-                            Смотреть работы
-                        </button>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img 
-                        src="https://picsum.photos/600/400?random=1" 
-                        alt="Рабочее место видеомонтажера с мониторами и оборудованием" 
-                        class="rounded-2xl shadow-xl"
-                        loading="lazy"
-                    />
-                    <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-lg">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                            <span class="text-sm font-medium">Свободен для новых проектов</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main>
+      <div class="img-container">
+        <img
+          class="img-main"
+          src="/img/IMG_22.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+         
+      </div>
+      <div class="img-container" id="target-img-3">
+        <img
+          class="img-main"
+          src="/img/IMG_33.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+        <button class="button-3"  onclick="scrollToTarget('target-img-8')" >Хочу контентне розслідування</button>
+      <script>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+      </div>
+      <div class="img-container">
+        <img
+          class="img-main"
+          src="/img/IMG_4.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+         <button class="button-3" onclick="scrollToTarget('target-img-8')">Хочу контентне розслідування</button>
+     <script>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-                Мои услуги
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-film text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Монтаж для YouTube</h3>
-                    <p class="text-gray-600 mb-4">Полный цикл монтажа: цветокоррекция, звук, графика, анимация для вашего канала</p>
-                    <span class="text-primary font-semibold">от 5 000 ₽</span>
-                </div>
-                
-                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-heart text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Свадебное видео</h3>
-                    <p class="text-gray-600 mb-4">Трогательные и стильные свадебные фильмы, которые сохранят ваши эмоции</p>
-                    <span class="text-primary font-semibold">от 15 000 ₽</span>
-                </div>
-                
-                <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-briefcase text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Корпоративное видео</h3>
-                    <p class="text-gray-600 mb-4">Презентации, реклама, обучающие ролики для бизнеса и компаний</p>
-                    <span class="text-primary font-semibold">от 10 000 ₽</span>
-                </div>
-            </div>
+      <div class="img-container" >
+        <img
+          class="img-main"
+          src="/img/IMG_5.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+         <button class="button-3" onclick="scrollToTarget('target-img-8')">Хочу контентне розслідування</button>
+      <script>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-                Мои работы
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-xl mb-4">
-                        <img 
-                            src="https://picsum.photos/400/300?random=2" 
-                            alt="Пример монтажа YouTube видео" 
-                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                        />
-                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                    </div>
-                    <h3 class="font-semibold text-gray-800">YouTube обзор техники</h3>
-                    <p class="text-sm text-gray-600">Динамичный монтаж с графикой</p>
-                </div>
-                
-                <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-xl mb-4">
-                        <img 
-                            src="https://picsum.photos/400/300?random=3" 
-                            alt="Пример свадебного монтажа" 
-                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                        />
-                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                    </div>
-                    <h3 class="font-semibold text-gray-800">Свадебная история</h3>
-                    <p class="text-sm text-gray-600">Романтичный стиль монтажа</p>
-                </div>
-                
-                <div class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-xl mb-4">
-                        <img 
-                            src="https://picsum.photos/400/300?random=4" 
-                            alt="Пример корпоративного видео" 
-                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                        />
-                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                    </div>
-                    <h3 class="font-semibold text-gray-800">Корпоративная презентация</h3>
-                    <p class="text-sm text-gray-600">Профессиональный бизнес-стиль</p>
-                </div>
-            </div>
+      <div class="img-container">
+        <img
+          class="img-main"
+          src="/img/IMG_6.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+         <button class="button-3"  onclick="scrollToTarget('target-img-8')">Хочу контентне розслідування</button>
+     <script>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img 
-                        src="https://picsum.photos/500/400?random=5" 
-                        alt="Эксперт по видеомонтажу за работой" 
-                        class="rounded-2xl shadow-lg"
-                        loading="lazy"
-                    />
-                </div>
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                        Обо мне
-                    </h2>
-                    <p class="text-gray-600 mb-6">
-                        Более 5 лет профессионально занимаюсь видеомонтажом. Работал с различными форматами: от YouTube-контента до корпоративных видео и свадеб.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span class="text-gray-700">Опыт работы с Adobe Premiere Pro, After Effects, DaVinci Resolve</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span class="text-gray-700">Более 200 успешных проектов</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-check text-green-500"></i>
-                            <span class="text-gray-700">Индивидуальный подход к каждому клиенту</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Готовы создать качественное видео?
-            </h2>
-            <p class="text-xl mb-8 text-blue-100">
-                Свяжитесь со мной для обсуждения вашего проекта
-            </p>
-            <button class="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-                Обсудить проект
-            </button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">VideoPro</h3>
-                    <p class="text-gray-400">
-                        Профессиональный монтаж видео любой сложности
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Контакты</h3>
-                    <div class="space-y-2 text-gray-400">
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-phone"></i>
-                            <span>+7 (999) 123-45-67</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-envelope"></i>
-                            <span>hello@videopro.ru</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Соцсети</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-vk"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 VideoPro. Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-
+      <div class="img-container">
+        <img
+          class="img-main"
+          src="/img/IMG_7.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+         <button class="button-3"  onclick="scrollToTarget('target-img-8')">Хочу контентне розслідування</button>
     <script>
-        // Navigation handling
-        document.addEventListener("DOMContentLoaded", function() {
-            // Smooth scrolling for anchor links
-            const anchorLinks = document.querySelectorAll("a[href^="#"]");
-            anchorLinks.forEach(link => {
-                link.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute("href").substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start"
-                        });
-                    }
-                });
-            });
-
-            // CTA button handlers
-            const ctaButtons = document.querySelectorAll("button");
-            ctaButtons.forEach(button => {
-                if (button.textContent.includes("Обсудить проект") || button.textContent.includes("Начать проект")) {
-                    button.addEventListener("click", function() {
-                        document.getElementById("contact").scrollIntoView({
-                            behavior: "smooth",
-                            block: "start"
-                        });
-                    }
-                });
-            });
-        });
-    </script>
-</body>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+        </div>
+    </main>
+    <footer>
+      <div class="img-container" id="target-img-8">
+        <img
+          class="img-main"
+          src="/img/IMG_8.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+       <a  href="https://secure.wayforpay.com/button/b2029348dc301" class="button-link" target="_blank" rel="noopener noreferrer">ПОЧАТИ РОЗСЛІДУВАННЯ</a>
+      </div>
+        <div class="img-container">
+        <img
+          class="img-main"
+          src="/img/IMG_9.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+       <a  href="https://secure.wayforpay.com/button/b2029348dc301" class="button-link" target="_blank" rel="noopener noreferrer">ПОЧАТИ РОЗСЛІДУВАННЯ</a>
+      </div>
+      <div class="img-container">
+        <img
+          class="img-main"
+          src="/img/IMG_10.jpg"
+          width="100%"
+          alt="img-landing"
+        />
+         <button class="button-final" onclick="scrollToTarget('target-img-8')">ХОЧУ КОНТЕНТНЕ РОЗСЛІДУВАННЯ</button>
+          <script>
+  function scrollToTarget(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script> 
+         
+         <a href="https://t.me/nastiiakorn" target="_blank" class="button-final-2">ПИШИ СЮДИ</a>
+    </footer>
+  </body>
 </html>
